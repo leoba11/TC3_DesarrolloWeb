@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/script.js"></script>
+    </header>
+    <body>
+        <div class="tc3">
+            <h2>TC3 Desarrollo Web</h2>
+        <br>
+        <h4>Comentarios Adicionales:</h4>
+        <textarea name="Description" id="texto" cols="50" rows="10" placeholder="Este es un comentario" 
+        onkeyup="verificar(this, 230, document.getElementById('progreso'))"></textarea>
+        <div id="progreso"></div>
+        </div>
+
+        <br>
+        <br>
+        <hola-mundo> Hola me llamo leo</hola-mundo>
+        <br>
+
+        <hola-mundo> Soy computin</hola-mundo>
+        <br>
+
+        <hola-mundo> Tengo 22 años</hola-mundo>
+        <br>
+
+        <hola-mundo> Tengo hambre</hola-mundo>
+        
+        <script>
+            class Hola_Mundo extends HTMLElement{
+                constructor() {
+                    super();
+                    this.innerHTML = ("¡ HOLA MUNDO !");
+                }
+            }
+
+            customElements.define('hola-mundo', Hola_Mundo);
+        </script>
+    </body>
+</html>
